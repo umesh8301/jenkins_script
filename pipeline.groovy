@@ -5,15 +5,15 @@ pipeline
     { 
         stage ('scm checkout')
       {
-          steps (sh 'echo code is getting downloaded')
+          steps {sh 'echo code is getting downloaded'}
           }
        stage ('build stage')
        {
-           steps (sh 'echo code is getting build')
+           steps {sh 'echo code is getting build'}
            }
        stage ('post build step')
        {
-           steps (sh 'echo post build step')
+           steps {sh 'echo post build step'}
        }
 
 }
