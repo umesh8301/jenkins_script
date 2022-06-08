@@ -15,6 +15,15 @@ pipeline
        {
            steps {sh 'echo post build step'}
        }
+        
+      stage ('deploy to qa')
+       {
+           steps {sh 'deplpy to qa'}
+       }
+         stage ('deploy to prod')
+       {
+           steps {sh 'depoy to prod'}
+       }
 
 }
 }
