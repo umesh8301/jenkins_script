@@ -15,6 +15,11 @@ pipeline
        {
            steps {sh 'echo post build step'}
        }
+
+       stage ('approval stage')
+       {
+           steps {input 'please privde the approval'}
+       }
          stage ('deploy to qa')
        {
            steps {sh 'echo deplpy to qa'}
@@ -23,5 +28,7 @@ pipeline
        {
            steps {sh 'echo depoy to prod'}
        }
+
+       
     }
 }
