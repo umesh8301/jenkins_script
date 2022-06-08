@@ -24,7 +24,7 @@ pipeline
        {
            steps {sh 'echo deplpy to qa'}
        }
-         stage ('deploy to prod')
+         stage ('deploy to the prod')
        {
            steps {sh 'echo depoy to prod'}
        }
